@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --bg-color: #e2e2e2;
+  --accent-color: #93f283;
+  --text-color: #000;
+  --heading-font: "Anton", sans-serif;
+  --body-font: "DM Sans", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* background-color: var(--bg-color); */
+  /* backdrop-filter: blur(10px); Applies the background blur */
+  /* background-color: rgba(
+    226,
+    226,
+    226,
+    0.2
+  );  */
+  /* position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100; */
+}
+.logo-text {
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.4em;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  padding-bottom: 50px;
+}
+.main h1 {
+  font-family: var(--heading-font);
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  font-size: 34vw;
+  margin-bottom: 30px;
+}
+.main img {
+  width: 450px;
+  position: absolute;
+  top: 20%;
+  transform: rotate(-6.43deg);
+}
+.main p {
+  font-family: var(--body-font);
+  font-weight: 500;
+  font-size: 1.2em;
+  width: 55vw;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.main button {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 10px 15px;
+  outline: none;
+  background-color: var(--bg-color);
+  font-family: var(--body-font);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .main img {
+    width: 250px;
+    top: 5%;
+  }
+  .main p {
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 0.8em;
+    width: 80vw;
+  }
+}
+/* @media (max-width: 900px) {
+  .main img {
+    width: 350px;
+    top: 5%;
+  }
+  .main p {
+    font-weight: 400;
+    font-size: 1em;
+    width: 60vw;
+  }
+} */
